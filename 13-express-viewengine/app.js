@@ -11,12 +11,12 @@ app.get('/', (req, res) => {
             email: 'hokky@gmail.com'
         },
         {
-            nama: 'Chintya',
-            email: 'chintya@gmail.com'
+            nama: 'Doddy',
+            email: 'doddy@gmail.com'
         },
         {
-            nama: 'Ami',
-            email: 'ami@gmail.com'
+            nama: 'Agus',
+            email: 'agus@gmail.com'
         },
     ]
     res.render('index', {
