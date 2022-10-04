@@ -1,2 +1,2 @@
 # node-js-learning
-Learn Node JS with WPU
+Learning Node JS and MongoDB with WPU
