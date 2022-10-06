@@ -1,0 +1,24 @@
+<form class="col-md-6 mt-3" action="/contact" method="post">
+    <h3>Tambah Kontak</h3>
+    <% if (typeof errors !=='undefined' ) { %>
+        <% errors.forEach(error=> { %>
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <%= error.msg %>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <% }) %>
+                <% } %>
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="nama" name="nama" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="nohp" class="form-label">No HP</label>
+                        <input type="text" class="form-control" id="nohp" name="nohp" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Tambah</button>
+</form>
